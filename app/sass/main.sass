@@ -1,0 +1,28 @@
+@import "fonts"
+@import "_mixins/mixins"
+@import "vars"
+@import "normalize"
+@import "typography"
+@import "libs"
+@import "wordpress-core"
+@import "common"
+@import "header"
+@import "page"
+@import "aside"
+@import "footer"
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	opacity: 1
+
+
+
+@import "media" // Всегда в конце

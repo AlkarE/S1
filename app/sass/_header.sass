@@ -1,0 +1,71 @@
+.topline
+	padding-top: 40px
+	@extend %clr
+	.lang-switcher
+		display: inline-block
+	.info
+		text-align: right
+
+.page-header
+	position: relative
+.description
+	h3
+		margin: 0
+.logo	
+	text-align: center
+	position: relative
+	margin-bottom: 30px
+	&::before, &::after
+		content: ''
+		height: 1px
+		background-color: $line-color
+		position: absolute
+		width: 38%
+		top: 0
+		left: 0
+	&::after
+		right: 0
+		left: auto
+	img
+		margin-top: -64px
+
+
+.menu-top
+	padding: 0 40px
+	margin-bottom: -10px
+	.active>a
+		color: $green
+	a
+		text-transform: uppercase
+		text-decoration: none
+		color: $menu-color
+		font-size: 15px
+		&:hover
+			color: $green
+			text-decoration: none
+
+	li:last-child
+		a
+			color: $green
+			display: block
+			border: 2px solid $green
+			background-color: #fff
+			padding: 8px 15px
+.deco
+	margin: 0
+	text-align: center
+	position: relative
+	color: $line-color
+	font-size: 12px
+	&:before, &:after
+		content: ''
+		height: 1px
+		width: 48%
+		background-color: $line-color
+		position: absolute
+		left: 0
+		top: 6px
+	&:after
+		left: auto
+		right: 0
+
